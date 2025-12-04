@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
     height: 100%;
-    background: linear-gradient(#232526, #414345);
+    background: linear-gradient(#222425, #3c3d3f);
 }
 
 body {
