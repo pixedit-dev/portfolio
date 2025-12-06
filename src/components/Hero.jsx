@@ -2,7 +2,39 @@ import { motion } from "framer-motion";
 import { FaExclamation, FaLongArrowAltRight } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 import Reveal from "./Reveal";
+import Button from "./Button";
 
+// A simple and small animation
+const AnimatedGears = () => {
+	return (
+		<div className="relative inline-block w-6 h-6 align-text-bottom">
+			<motion.div
+				animate={{ rotate: 360 }}
+				transition={{
+					duration: 12,
+					ease: "linear",
+					repeat: Infinity,
+				}}
+				// Absolute positioning to overlap with the second gear
+				className="absolute top-0 left-0 scale-75">
+				<FaGear className="w-6 h-6 text-emerald-600" />
+			</motion.div>
+
+			<motion.div
+				animate={{ rotate: -360 }}
+				transition={{
+					duration: 11,
+					ease: "linear",
+					repeat: Infinity,
+				}}
+				className="absolute top-[11px] left-[13px] transform scale-[0.85]">
+				<FaGear className="w-5 h-5 text-emerald-500 opacity-80" />
+			</motion.div>
+		</div>
+	);
+};
+
+// The main component
 const Hero = () => {
 	return (
 		<div className="h-screen mx-auto flex justify-center items-center px-2 md:px-6">
@@ -42,10 +74,7 @@ const Hero = () => {
 					</div>
 				</Reveal>
 				<Reveal delay="1">
-					<motion.button
-						whileHover={{ scale: 0.9, background: "#3472b5" }}
-						whileTap={{ scale: 1 }}
-						className="flex bg-sky-600 py-1 px-2 md:py-2 md:px-4 w-fit rounded-[10px] cursor-pointer">
+					<Button className="flex bg-sky-600 ml-2 py-1 px-2 md:py-2 md:px-4 w-fit rounded-[10px] cursor-pointer">
 						Let's chat
 						<motion.span
 							className="ml-1 mt-[4px]"
@@ -57,7 +86,7 @@ const Hero = () => {
 							}}>
 							<FaLongArrowAltRight />
 						</motion.span>
-					</motion.button>
+					</Button>
 				</Reveal>
 			</div>
 		</div>
@@ -65,32 +94,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const AnimatedGears = () => {
-	return (
-		<div className="relative inline-block w-6 h-6 align-text-bottom">
-			<motion.div
-				animate={{ rotate: 360 }}
-				transition={{
-					duration: 12,
-					ease: "linear",
-					repeat: Infinity,
-				}}
-				// Absolute positioning to overlap with the second gear
-				className="absolute top-0 left-0 scale-75">
-				<FaGear className="w-6 h-6 text-emerald-600" />
-			</motion.div>
-
-			<motion.div
-				animate={{ rotate: -360 }}
-				transition={{
-					duration: 11,
-					ease: "linear",
-					repeat: Infinity,
-				}}
-				className="absolute top-[11px] left-[13px] transform scale-[0.85]">
-				<FaGear className="w-5 h-5 text-emerald-500 opacity-80" />
-			</motion.div>
-		</div>
-	);
-};
