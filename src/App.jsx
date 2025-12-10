@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -12,6 +13,9 @@ const App = () => {
 			<div className="flex">
 				<Sidebar />
 				<Hero />
+			</div>
+			<div className="container max-w-[1280px] mx-auto">
+				<About />
 			</div>
 		</main>
 	);

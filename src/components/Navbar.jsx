@@ -32,18 +32,21 @@ const Navbar = () => {
 				</motion.li>
 			</ul>
 
-			<div className="pr-4">
+			<motion.div
+				initial={{ y: -200 }}
+				animate={{ y: 0 }}
+				transition={{ duration: 2 }}
+				className="pr-4">
 				<Button
 					className="inline-block rounded-2xl p-0.5 cursor-pointer
                            bg-gradient-to-r from-cyan-500 to-blue-500">
 					<span
 						className="block px-3 py-0.5 font-bold text-sm rounded-[14px] 
-                               bg-gray-800 text-[#e8e8e8] transition-all duration-300
-                               group-hover:bg-opacity-0 group-hover:text-white">
+                               bg-gray-800 text-[#e8e8e8] hover:text-gray-300">
 						My Resume
 					</span>
 				</Button>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
