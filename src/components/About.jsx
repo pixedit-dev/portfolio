@@ -3,17 +3,17 @@ import Skills from "./SkillSection";
 
 const About = () => {
 	return (
-		<div className="text-center text-white text-[18px] px-6 md:px-[2rem]">
+		<div className="text-center text-white px-6 md:px-[2rem]">
 			<div className="flex flex-col gap-x-10">
-				<div className=" flex flex-col gap-y-4 text-left mb-12">
+				<div className="flex flex-col gap-y-4 text-left mb-12 text-sm">
 					<Reveal delay="0.4">
-						<h2 className="text-[24px] text-[#dfdfdf] text-center pb-4 md:pr-4">
+						<h2 className="text-[18px] sm:text-[24px] text-[#dfdfdf] text-center pb-4 md:pr-4">
 							About me
 						</h2>
 					</Reveal>
 					<Reveal>
-						<p className="max-w-[600px]">
-							I’m a Front-End developer with two years of experience building
+						<p className="sm:max-w-[600px] text-[13px] sm:text-[18px]">
+							I`m a Front-End developer with two years of experience building
 							modern applications using React and Next.js.
 						</p>
 					</Reveal>

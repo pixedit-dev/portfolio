@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const Navbar = () => {
 	return (
-		<div className="pl-16 pt-3 flex justify-between">
-			<ul className="flex text-stone-300 text-[20px] gap-x-[10px]">
+		<div className="pl-6 sm:pl-16 pt-3 flex justify-between">
+			<ul className="flex text-stone-300 pt-1 sm:text-[20px] gap-x-[10px]">
 				<motion.li
 					initial={{ y: -200 }}
 					animate={{ y: 0 }}
@@ -41,7 +41,7 @@ const Navbar = () => {
 					className="inline-block rounded-2xl p-0.5 cursor-pointer
                            bg-gradient-to-r from-cyan-500 to-blue-500">
 					<span
-						className="block px-3 py-0.5 font-bold text-sm rounded-[14px] 
+						className="block px-3 py-0.5 font-bold text-[10px] sm:text-[12px] rounded-[14px] 
                                bg-gray-800 text-[#e8e8e8] hover:text-gray-300">
 						My Resume
 					</span>

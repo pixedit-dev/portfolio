@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const Sidebar = () => {
 	return (
-		<div className="w-[50px] text-sm">
-			<ul className="h-fit text-stone-400 flex flex-col gap-y-16 ">
+		<div className="sm:w-[50px] w-[30px] sm:text-sm text-[12px]">
+			<ul className="h-fit text-stone-400 flex flex-col gap-y-16">
 				<motion.li
 					initial={{ x: -200 }}
 					animate={{ x: 0 }}
