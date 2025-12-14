@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 const Skills = () => {
 	return (
 		<section className="sm:px-4">
-			<h2 className="text-2xl text-white my-5">Skills</h2>
+			<h2 className="text-2xl text-[#dfdfdf] my-8">Skills</h2>
 
 			<div className="sm:space-y-6 grid md:grid-cols-2 gap-x-8">
 				{skillGroups.map((group) => (

@@ -3,7 +3,7 @@ import Skills from "./SkillSection";
 
 const About = () => {
 	return (
-		<div className="text-center text-white px-6 md:px-[2rem]">
+		<section className="text-center text-white px-6 md:px-[2rem]">
 			<div className="flex flex-col gap-x-10">
 				<div className="flex flex-col gap-y-4 text-left mb-12 text-sm">
 					<Reveal delay="0.4">
@@ -40,7 +40,7 @@ const About = () => {
 					<Skills />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
