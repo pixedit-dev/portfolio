@@ -1,25 +1,17 @@
-import About from "./components/About";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import ProjectGrid from "./components/ProjectGrid";
-import Sidebar from "./components/Sidebar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import ProjectDetail from "./pages/ProjectDetail";
 
 const App = () => {
 	return (
-		<main>
-			<header>
-				<Navbar />
-			</header>
-
-			<div className="flex">
-				<Sidebar />
-				<Hero />
-			</div>
-			<div className="container max-w-[1280px] mx-auto">
-				<About />
-				<ProjectGrid />
-			</div>
-		</main>
+		<BrowserRouter>
+			<main>
+				<Routes>
+					<Route path="/" element={<HomePage />} />
+					<Route path="/projects/:projectId" element={<ProjectDetail />} />
+				</Routes>
+			</main>
+		</BrowserRouter>
 	);
 };
 
