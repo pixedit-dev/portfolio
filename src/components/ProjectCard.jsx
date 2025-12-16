@@ -13,12 +13,12 @@ const ProjectCard = ({ project }) => {
 				</Link>
 				<div className="text-center mt-6 px-4">
 					<strong>{project.name}</strong>
-					<h4 className="text-sm mt-4">{project.title}</h4>
+					<h4 className="font-roboto text-sm mt-4">{project.title}</h4>
 				</div>
 			</div>
 
 			<div className="p-4 flex-grow">
-				<p className="text-gray-300/70">{project.description}</p>
+				<p className="text-gray-300/70 font-inter">{project.description}</p>
 			</div>
 
 			<div className="text-center text-blue-500/70 flex gap-x-4 justify-around p-4 mt-auto max-h-[50px]">

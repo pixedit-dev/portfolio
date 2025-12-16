@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const ProjectGrid = () => {
 	return (
 		<section>
-			<h3 className="text-[#dfdfdf] text-[16px] sm:text-2xl my-8 text-center">
+			<h3 className="text-[#dfdfdf] text-[16px] sm:text-2xl my-16 text-center">
 				Self-initiated projects
 			</h3>
 			<div className="grid grid-cols-2 gap-y-10 justify-center">

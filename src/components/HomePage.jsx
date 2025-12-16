@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import ProjectGrid from "./ProjectGrid";
 import Sidebar from "./Sidebar";
+import Journey from "./Journey";
 
 const HomePage = () => {
 	return (
@@ -15,9 +16,10 @@ const HomePage = () => {
 				<Sidebar />
 				<Hero />
 			</div>
-			<div className="container max-w-[1280px] mx-auto">
+			<div className="container max-w-[1280px] flex-col gap-y-[8rem] mx-auto">
 				<About />
 				<ProjectGrid />
+				<Journey />
 			</div>
 		</div>
 	);
