@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import ProjectGrid from "./ProjectGrid";
 import Sidebar from "./Sidebar";
 import Journey from "./Journey";
+import Contact from "./Contact";
 
 const HomePage = () => {
 	return (
@@ -20,6 +21,7 @@ const HomePage = () => {
 				<About />
 				<ProjectGrid />
 				<Journey />
+				<Contact />
 			</div>
 		</div>
 	);
