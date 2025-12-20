@@ -7,7 +7,7 @@ const ProjectGrid = () => {
 			<h3 className="text-[#dfdfdf] text-[16px] sm:text-2xl my-16 text-center">
 				Self-initiated projects
 			</h3>
-			<div className="grid grid-cols-2 gap-y-10 justify-center">
+			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 px-4 justify-center">
 				{projects.map((project) => (
 					<ProjectCard key={project.id} project={project} />
 				))}

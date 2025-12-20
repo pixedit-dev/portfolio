@@ -7,7 +7,7 @@ const SkillItem = ({ name, Icon, imageSrc }) => {
 				<img
 					src={imageSrc}
 					alt={name}
-					className="max-w-15 max-h-10 object-cover"
+					className="min-w-[34px] max-w-[35px] xl:max-w-15 xl:max-h-10 object-cover"
 				/>
 			)}
 			<span className="text-[10px] sm:text-sm text-gray-300">{name}</span>

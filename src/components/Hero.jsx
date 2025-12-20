@@ -3,8 +3,9 @@ import { FaExclamation, FaLongArrowAltRight } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 import Reveal from "./Reveal";
 import Button from "./Button";
+import ProfileImage from "./ProfileImage";
 
-// A simple and small animation
+// Gears animation
 const AnimatedGears = () => {
 	return (
 		<div className="relative inline-block w-6 h-6 align-text-bottom">
@@ -37,8 +38,14 @@ const AnimatedGears = () => {
 // The main component
 const Hero = () => {
 	return (
-		<div className="h-screen mx-auto flex justify-center items-center px-4 md:px-6">
+		<div className="h-screen mx-auto flex justify-center items-center px-4 md:px-6 mb-24">
 			<div className="font-nunito text-white flex flex-col gap-2">
+				{/* Profile image 1 */}
+				<ProfileImage
+					src="src/assets/images/profile_image1.png"
+					className="max-w-[100px] sm:max-w-[150px] mx-auto rounded-full lg:-ml-18 mb-6 shadow-xl shadow-black/80 duration-200"
+				/>
+
 				<Reveal>
 					<h3 className="md:text-[20px] flex">
 						Hello
