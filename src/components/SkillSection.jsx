@@ -5,12 +5,14 @@ import Reveal from "./Reveal";
 const Skills = () => {
 	return (
 		<section className="sm:px-4">
-			<h2 className="text-2xl text-[#dfdfdf] my-8">Skills</h2>
+			<Reveal delay="0.5">
+				<h2 className="text-2xl text-[#dfdfdf] my-8">Skills</h2>
+			</Reveal>
 
 			<div className="sm:space-y-6 grid md:grid-cols-2 gap-x-8">
 				{skillGroups.map((group) => (
 					<div key={group.title}>
-						<Reveal>
+						<Reveal delay="0.3">
 							<h3 className="sm:text-lg text-gray-200 mb-1 sm:mb-3 font-semibold text-sky-300/70">
 								{group.title}
 							</h3>
