@@ -2,7 +2,8 @@ import { FiMail, FiGithub, FiLinkedin, FiCopy, FiCheck } from "react-icons/fi";
 import Reveal from "../components/Reveal";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-const Contact = () => {
+
+const Contact = ({ isDark }) => {
 	const [copied, setCopied] = useState(false);
 
 	const copyEmail = () => {
@@ -15,10 +16,16 @@ const Contact = () => {
 		<section className="text-[#dfdfdf] mt-32 px-6 sm:px-12 max-w-6xl mx-auto pb-32">
 			<Reveal>
 				<div className="mb-12 text-center">
-					<h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+					<h2
+						className={`${
+							isDark ? "text-[#dfdfdf]" : "text-[#1a3379]"
+						} text-3xl sm:text-4xl font-bold mb-4`}>
 						Get in Touch
 					</h2>
-					<p className="text-gray-400 max-w-md mx-auto">
+					<p
+						className={`${
+							isDark ? "text-gray-400" : "text-gray-700"
+						} max-w-md mx-auto`}>
 						Open to collaboration, questions, or opportunities.
 					</p>
 				</div>
@@ -27,17 +34,20 @@ const Contact = () => {
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 				{/* Email Card */}
 				<Reveal>
-					<div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors h-full relative">
-						<FiMail className="text-2xl mb-4 text-blue-400" />
+					<div className="p-8 rounded-2xl bg-black/20 border border-black/25 hover:bg-black/30 transition-colors h-full relative">
+						<FiMail className="text-2xl mb-4 text-blue-600" />
 						<h3 className="text-white font-semibold text-xl mb-2">Email</h3>
-						<p className="text-sm text-gray-400 mb-6">
+						<p
+							className={`${
+								isDark ? "text-gray-400" : "text-[#2f6e6d]"
+							} text-sm mb-6`}>
 							Best for detailed discussions
 						</p>
 
 						<button
 							onClick={copyEmail}
 							title="Copy Email"
-							className="flex items-center gap-2 text-sm bg-white/10 px-3 py-2 rounded-lg hover:text-white transition-all w-full justify-center relative outline-none cursor-pointer">
+							className="flex items-center gap-2 text-[12px] sm:text-sm bg-white/10 px-3 py-2 rounded-lg hover:text-white transition-all w-full justify-center relative outline-none cursor-pointer">
 							<span className="truncate">pixedit.2023@gmail.com</span>
 
 							{copied ? <FiCheck className="text-green-400" /> : <FiCopy />}
@@ -64,13 +74,16 @@ const Contact = () => {
 						href="https://github.com/pixedit-dev"
 						target="_blank"
 						rel="noreferrer"
-						className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors block h-full">
-						<FiGithub className="text-2xl mb-4 text-purple-400" />
+						className="group p-8 rounded-2xl bg-black/20 border border-black/25 hover:bg-black/30 transition-colors block h-full">
+						<FiGithub className="text-2xl mb-4 text-purple-600" />
 						<h3 className="text-white font-semibold text-xl mb-2">GitHub</h3>
-						<p className="text-sm text-gray-400 mb-9">
+						<p
+							className={`${
+								isDark ? "text-gray-400" : "text-[#2f6e6d]"
+							} text-sm mb-9`}>
 							Explore my projects and code
 						</p>
-						<span className="text-white underline underline-offset-4 group-hover:text-purple-400">
+						<span className="text-white underline underline-offset-4 group-hover:text-purple-600">
 							View Profile
 						</span>
 					</a>
@@ -79,13 +92,16 @@ const Contact = () => {
 				{/* LinkedIn Card */}
 				<Reveal>
 					<a
-						href="#"
+						href="https://www.linkedin.com/in/milad-marivand-89b2033a1/"
 						target="_blank"
 						rel="noreferrer"
-						className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors block h-full">
-						<FiLinkedin className="text-2xl mb-4 text-blue-500" />
+						className="group p-8 rounded-2xl bg-black/20 border border-black/25 hover:bg-black/30 transition-colors block h-full">
+						<FiLinkedin className="text-2xl mb-4 text-blue-600" />
 						<h3 className="text-white font-semibold text-xl mb-2">LinkedIn</h3>
-						<p className="text-sm text-gray-400 mb-9">
+						<p
+							className={`${
+								isDark ? "text-gray-400" : "text-[#2f6e6d]"
+							} text-sm mb-9`}>
 							Professional background
 						</p>
 						<span className="text-white underline underline-offset-4 group-hover:text-blue-500">

@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 const ProjectCard = ({ project }) => {
 	return (
 		<Reveal>
-			<div className="rounded-[10px] shadow-xl shadow-stone-800 bg-radial from-[#37393a] to-[#232526] max-w-[350px] mx-auto justify-self-center text-white flex flex-col sm:h-[450px]">
+			<div className="rounded-[10px] border-1 border-black/30 bg-radial from-[#37393a] to-[#232526] max-w-[350px] mx-auto justify-self-center text-white flex flex-col sm:h-[450px]">
 				<div>
 					<Link to={`/projects/${project.id}`}>
 						<img

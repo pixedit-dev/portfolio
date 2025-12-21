@@ -1,13 +1,19 @@
 import Reveal from "./Reveal";
-import Skills from "./SkillSection";
+import SkillSection from "./SkillSection";
 
-const About = () => {
+const About = ({ isDark }) => {
 	return (
-		<section className="text-center text-white px-6 md:px-[2rem]">
+		<section
+			className={`${
+				isDark ? "text-white" : "text-[#201b03]"
+			} text-center px-4 sm:px-6 md:px-[2rem]`}>
 			<div className="flex flex-col gap-x-10">
 				<div className="flex flex-col gap-y-4 text-left mb-12 text-sm">
 					<Reveal delay="0.4">
-						<h2 className="text-[18px] sm:text-[24px] text-[#dfdfdf] text-center pb-4 md:pr-4">
+						<h2
+							className={`${
+								isDark ? "text-[#dfdfdf]" : "text-[#1a3379]"
+							} text-[18px] sm:text-[24px] text-center pb-4 md:pr-4 font-semibold`}>
 							About me
 						</h2>
 					</Reveal>
@@ -20,7 +26,10 @@ const About = () => {
 					<Reveal>
 						<div>
 							<p className="font-semibold mb-2">Front-End focus:</p>
-							<ul className="list-disc pl-10 space-y-2 font-semibold text-[#b6dae5] text-[14px] md:text-[16px]">
+							<ul
+								className={`${
+									isDark ? "text-[#b6dae5]" : "text-[#851616]"
+								} list-disc pl-10 space-y-2 font-semibold text-[14px] md:text-[16px]`}>
 								<li>React & Next.js</li>
 								<li>Clean, readable, and maintainable code</li>
 								<li>Performance-focused UI</li>
@@ -37,7 +46,7 @@ const About = () => {
 					</Reveal>
 				</div>
 				<div>
-					<Skills />
+					<SkillSection isDark={isDark} />
 				</div>
 			</div>
 		</section>

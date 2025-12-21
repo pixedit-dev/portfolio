@@ -18,7 +18,7 @@ const AnimatedGears = () => {
 				}}
 				// Absolute positioning to overlap with the second gear
 				className="absolute top-0 left-0 scale-75">
-				<FaGear className="w-6 h-6 text-emerald-600" />
+				<FaGear className="w-6 h-6 text-emerald-800" />
 			</motion.div>
 
 			<motion.div
@@ -29,28 +29,33 @@ const AnimatedGears = () => {
 					repeat: Infinity,
 				}}
 				className="absolute top-[11px] left-[13px] transform scale-[0.85]">
-				<FaGear className="w-5 h-5 text-emerald-500 opacity-80" />
+				<FaGear className="w-5 h-5 text-emerald-700 opacity-80" />
 			</motion.div>
 		</div>
 	);
 };
 
 // The main component
-const Hero = () => {
+const Hero = ({ isDark }) => {
 	return (
-		<div className="h-screen mx-auto flex justify-center items-center px-4 md:px-6 mb-24">
-			<div className="font-nunito text-white flex flex-col gap-2">
+		<div className="h-screen mx-auto flex justify-center items-center px-3 md:px-6 mb-24">
+			<div
+				className={`${
+					isDark ? "text-white" : "text-black"
+				} font-nunito flex flex-col gap-2`}>
 				{/* Profile image 1 */}
 				<ProfileImage
 					src="src/assets/images/profile_image1.png"
-					className="max-w-[100px] sm:max-w-[150px] mx-auto rounded-full lg:-ml-18 mb-6 shadow-xl shadow-black/80 duration-200"
+					className="max-w-[100px] sm:max-w-[150px] mx-auto rounded-full lg:-ml-18 mt-10 mb-6 shadow-xl shadow-black/80 duration-200"
 				/>
 
 				<Reveal>
 					<h3 className="md:text-[20px] flex">
 						Hello
 						<motion.span
-							className="text-cyan-500 ml-[-5px]"
+							className={`${
+								isDark ? "text-cyan-500" : "text-orange-400"
+							} ml-[-5px]`}
 							animate={{ rotate: [0, -8, 0, 8, 0] }}
 							transition={{
 								duration: 1.2,
@@ -66,17 +71,30 @@ const Hero = () => {
 
 				<Reveal delay="0.3">
 					<h3 className="md:text-xl text-[14px]">
-						Junior <span className="text-cyan-500">Front-End</span> Developer
+						Junior{" "}
+						<span
+							className={`${
+								isDark ? "text-cyan-500" : "text-orange-500 font-semibold"
+							}`}>
+							Front-End
+						</span>{" "}
+						Developer
 					</h3>
 				</Reveal>
 				<Reveal delay="0.7">
-					<p className="text-[13px] md:text[18px] max-w-[600px] text-neutral-300">
+					<p
+						className={`${
+							isDark ? "text-neutral-300" : "text-stone-700 font-semibold"
+						} text-[13px] md:text[18px] max-w-[600px]`}>
 						Specializing in React and modern design, I prioritize clean code and
 						user interactivity to deliver reliable results. I never stop
 						experimenting and experiencing cool things, and always open to new
 					</p>
 					<div className="flex items-center gap-1 pb-2 text-sm">
-						<span className="text-orange-400">challanges</span>
+						<span
+							className={`${isDark ? "text-orange-400" : "text-stone-800"}`}>
+							challanges
+						</span>
 						<AnimatedGears />
 					</div>
 				</Reveal>
