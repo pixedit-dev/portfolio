@@ -37,6 +37,12 @@ const AnimatedGears = () => {
 
 // The main component
 const Hero = ({ isDark }) => {
+	const scrollToContact = () => {
+		document.getElementById("contact")?.scrollIntoView({
+			behavior: "smooth",
+		});
+	};
+
 	return (
 		<div className="h-screen mx-auto flex justify-center items-center px-3 md:px-6 mb-24">
 			<div
@@ -99,9 +105,11 @@ const Hero = ({ isDark }) => {
 					</div>
 				</Reveal>
 				<Reveal delay="1">
-					<Button className="flex text-sm bg-sky-600 ml-2 py-1 px-2 md:py-2 md:px-4 w-fit rounded-[10px] cursor-pointer">
+					<Button
+						onClick={scrollToContact}
+						className="flex text-sm bg-sky-600 ml-2 py-1 px-2 md:py-2 md:px-4 w-fit rounded-[10px] cursor-pointer">
 						Let's chat
-						<motion.span
+						<motion.a
 							className="ml-1 mt-[4px]"
 							animate={{ x: [0, 5, 0] }}
 							transition={{
@@ -110,7 +118,7 @@ const Hero = ({ isDark }) => {
 								ease: "easeInOut",
 							}}>
 							<FaLongArrowAltRight />
-						</motion.span>
+						</motion.a>
 					</Button>
 				</Reveal>
 			</div>
