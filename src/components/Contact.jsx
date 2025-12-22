@@ -13,7 +13,9 @@ const Contact = ({ isDark }) => {
 	};
 
 	return (
-		<section className="text-[#dfdfdf] mt-32 px-6 sm:px-12 max-w-6xl mx-auto pb-32">
+		<section
+			id="contact"
+			className="text-[#dfdfdf] mt-32 px-6 sm:px-12 max-w-6xl mx-auto pb-32">
 			<Reveal>
 				<div className="mb-12 text-center">
 					<h2

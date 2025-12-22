@@ -1,6 +1,8 @@
 const Journey = ({ isDark }) => {
 	return (
-		<div className="px-2 sm:px-12 mx-auto pb-28 text-sm sm:text-[16px] select-none">
+		<section
+			id="journey"
+			className="px-2 sm:px-12 mx-auto pb-28 text-sm sm:text-[16px] select-none">
 			<h3
 				className={`${
 					isDark ? "text-[#dfdfdf]" : "text-[#1a3379]"
@@ -112,7 +114,7 @@ const Journey = ({ isDark }) => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

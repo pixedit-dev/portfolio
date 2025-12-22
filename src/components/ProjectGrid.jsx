@@ -4,12 +4,12 @@ import Reveal from "./Reveal";
 
 const ProjectGrid = ({ isDark }) => {
 	return (
-		<section>
+		<section id="projects" className="mb-44">
 			<Reveal delay="0.5">
 				<h3
 					className={`${
 						isDark ? "text-[#dfdfdf]" : "text-[#1a3379]"
-					} text-[16px] sm:text-2xl my-16 text-center font-semibold`}>
+					} text-[16px] sm:text-2xl mb-16 text-center font-semibold`}>
 					Self-initiated projects
 				</h3>
 			</Reveal>

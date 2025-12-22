@@ -15,25 +15,33 @@ const Sidebar = ({ isDark }) => {
 					animate={{ x: 0 }}
 					transition={{ duration: 1.6, ease: "easeInOut" }}
 					className="mt-10">
-					<a className={`${styles}`}>About</a>
+					<a href="#about" className={`${styles}`}>
+						About
+					</a>
 				</motion.li>
 				<motion.li
 					initial={{ x: -200 }}
 					animate={{ x: 0 }}
 					transition={{ duration: 1.7, ease: "easeInOut" }}>
-					<a className={`${styles}`}>Projects</a>
+					<a href="#projects" className={`${styles}`}>
+						Projects
+					</a>
 				</motion.li>
 				<motion.li
 					initial={{ x: -200 }}
 					animate={{ x: 0 }}
 					transition={{ duration: 1.8, ease: "easeInOut" }}>
-					<a className={`${styles} mt-4`}>Experience</a>
+					<a href="#journey" className={`${styles} mt-4`}>
+						Experience
+					</a>
 				</motion.li>
 				<motion.li
 					initial={{ x: -200 }}
 					animate={{ x: 0 }}
 					transition={{ duration: 1.9, ease: "easeInOut" }}>
-					<a className={`${styles}`}>Contact</a>
+					<a href="#contact" className={`${styles}`}>
+						Contact
+					</a>
 				</motion.li>
 				<motion.li
 					initial={{ x: -200 }}
