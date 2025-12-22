@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 const ProjectGrid = ({ isDark }) => {
 	return (
-		<section id="projects" className="mb-44">
+		<section id="projects" className="mb-24 sm:mb-44">
 			<Reveal delay="0.5">
 				<h3
 					className={`${

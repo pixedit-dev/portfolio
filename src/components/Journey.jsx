@@ -2,7 +2,7 @@ const Journey = ({ isDark }) => {
 	return (
 		<section
 			id="journey"
-			className="px-2 sm:px-12 mx-auto pb-28 text-sm sm:text-[16px] select-none">
+			className="px-2 sm:px-12 mx-auto sm:mb-28 text-sm sm:text-[16px] select-none">
 			<h3
 				className={`${
 					isDark ? "text-[#dfdfdf]" : "text-[#1a3379]"

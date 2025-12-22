@@ -7,7 +7,7 @@ const About = ({ isDark }) => {
 			id="about"
 			className={`${
 				isDark ? "text-white" : "text-[#201b03]"
-			} text-center px-4 sm:px-6 md:px-[2rem] mb-44`}>
+			} text-center px-4 sm:px-6 md:px-[2rem] mb-24 sm:mb-44`}>
 			<div className="flex flex-col gap-x-10">
 				<div className="flex flex-col gap-y-4 text-left mb-12 text-sm">
 					<Reveal delay="0.4">
