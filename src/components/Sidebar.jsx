@@ -47,7 +47,9 @@ const Sidebar = ({ isDark }) => {
 					initial={{ x: -200 }}
 					animate={{ x: 0 }}
 					transition={{ duration: 2, ease: "easeInOut" }}>
-					<a className={`${styles} mt-2`}>Summary</a>
+					<a className={`${styles} mt-2`} href="#summary">
+						Summary
+					</a>
 				</motion.li>
 			</ul>
 		</div>

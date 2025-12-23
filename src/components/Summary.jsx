@@ -1,6 +1,7 @@
 const Summary = ({ isDark }) => {
 	return (
-		<div
+		<section
+			id="summary"
 			className={`${
 				isDark ? "text-gray-200" : "text-black"
 			} text-center max-w-[600px] mx-auto pb-16 px-6 sm:mt-18`}>
@@ -19,7 +20,7 @@ const Summary = ({ isDark }) => {
 				Thanks for stopping by. If my work resonates with you, I’d be glad to
 				get in touch.
 			</p>
-		</div>
+		</section>
 	);
 };
 

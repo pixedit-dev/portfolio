@@ -15,7 +15,7 @@ const ProjectGrid = ({ isDark }) => {
 			</Reveal>
 			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-20 gap-x-2 px-4 justify-center">
 				{projects.map((project) => (
-					<ProjectCard key={project.id} project={project} />
+					<ProjectCard key={project.id} project={project} isDark={isDark} />
 				))}
 			</div>
 		</section>
