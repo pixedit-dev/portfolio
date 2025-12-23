@@ -1,6 +1,6 @@
-import clockImg from "../assets/images/analog-clock.png";
-import todoImg from "../assets/images/focus-forge.png";
-import weatherImg from "../assets/images/breeze.png";
+import clockImg from "/images/analog-clock.png";
+import todoImg from "/images/focus-forge.png";
+import weatherImg from "/images/breeze.png";
 
 const projects = [
 	{
