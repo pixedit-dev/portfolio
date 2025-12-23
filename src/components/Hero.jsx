@@ -51,7 +51,7 @@ const Hero = ({ isDark }) => {
 				} font-nunito flex flex-col gap-2`}>
 				{/* Profile image 1 */}
 				<ProfileImage
-					src="/images/profile_image1.png"
+					src="images/profile_image1.png"
 					className="max-w-[100px] sm:max-w-[150px] mx-auto rounded-full lg:-ml-18 mt-10 mb-6 shadow-xl shadow-black/80 duration-200 select-none"
 				/>
 

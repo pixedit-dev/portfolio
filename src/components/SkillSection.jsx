@@ -33,7 +33,7 @@ const SkillSection = ({ isDark }) => {
 										key={skill.name}
 										name={skill.name}
 										Icon={skill.icon}
-										imageSrc={`/icons/${skill.name.toLowerCase()}.svg`}
+										imageSrc={`icons/${skill.name.toLowerCase()}.svg`}
 										isDark={isDark}
 									/>
 								))}
