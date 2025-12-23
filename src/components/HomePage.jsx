@@ -31,7 +31,7 @@ const HomePage = () => {
 				<Journey isDark={isDark} />
 				<Contact isDark={isDark} />
 				<Summary isDark={isDark} />
-				<ScrollToTop />
+				<ScrollToTop isDark={isDark} />
 			</div>
 		</div>
 	);

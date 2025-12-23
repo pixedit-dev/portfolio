@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
 import Button from "../components/Button";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ isDark }) => {
 	const [isVisible, setIsVisible] = useState(false);
 
 	useEffect(() => {
@@ -24,13 +24,15 @@ const ScrollToTop = () => {
 
 	return (
 		<Button
-			className="fixed bottom-6 right-6 z-50
+			className={`${
+				isDark ? "bg-white/10" : "bg-black/30"
+			} fixed bottom-6 right-6 z-50
 				p-2 sm:p-3 rounded-full
-				bg-white/10 backdrop-blur
+				backdrop-blur
 				border border-white/20
 				text-white
 				hover:bg-white/20
-				transition-all cursor-pointer animate-bounce"
+				transition-all cursor-pointer animate-bounce`}
 			onClick={scrollToTop}>
 			<FiArrowUp className="text-xl" />
 		</Button>
