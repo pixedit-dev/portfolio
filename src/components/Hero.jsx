@@ -52,7 +52,7 @@ const Hero = ({ isDark }) => {
 				{/* Profile image 1 */}
 				<ProfileImage
 					src="src/assets/images/profile_image1.png"
-					className="max-w-[100px] sm:max-w-[150px] mx-auto rounded-full lg:-ml-18 mt-10 mb-6 shadow-xl shadow-black/80 duration-200"
+					className="max-w-[100px] sm:max-w-[150px] mx-auto rounded-full lg:-ml-18 mt-10 mb-6 shadow-xl shadow-black/80 duration-200 select-none"
 				/>
 
 				<Reveal>

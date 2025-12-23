@@ -6,7 +6,8 @@ import Sidebar from "./Sidebar";
 import Journey from "./Journey";
 import Contact from "./Contact";
 import { useState } from "react";
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "../utils/ScrollToTop";
+import Summary from "./Summary";
 
 const HomePage = () => {
 	const [isDark, setIsDark] = useState(true);
@@ -29,6 +30,7 @@ const HomePage = () => {
 				<ProjectGrid isDark={isDark} />
 				<Journey isDark={isDark} />
 				<Contact isDark={isDark} />
+				<Summary isDark={isDark} />
 				<ScrollToTop />
 			</div>
 		</div>

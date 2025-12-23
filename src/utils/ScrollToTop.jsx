@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const ScrollToTop = () => {
 	const [isVisible, setIsVisible] = useState(false);

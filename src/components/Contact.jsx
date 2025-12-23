@@ -1,4 +1,5 @@
 import { FiMail, FiGithub, FiLinkedin, FiCopy, FiCheck } from "react-icons/fi";
+import { FaHeadphones } from "react-icons/fa6";
 import Reveal from "../components/Reveal";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -111,6 +112,12 @@ const Contact = ({ isDark }) => {
 						</span>
 					</a>
 				</Reveal>
+			</div>
+			<div>
+				<FaHeadphones className="mx-auto mt-8 mb-1 sm:text-2xl text-black border-b-[1px] border-b-amber-600 w-[100px]" />
+				<p className="text-center font-semibold font-inter text-[14px] sm:text-[18px] text-gray-500">
+					I usually respond within 24 hours
+				</p>
 			</div>
 		</section>
 	);
