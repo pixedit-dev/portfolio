@@ -4,7 +4,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 
 const App = () => {
 	return (
-		<BrowserRouter basename="/portfolio">
+		<BrowserRouter>
 			<main>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
