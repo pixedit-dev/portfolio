@@ -22,7 +22,7 @@ const projects = [
 
 		links: {
 			github: "https://github.com/pixedit-dev/Analog-Clock",
-			demo: "https://pixedit-dev.github.io/Analog-Clock",
+			demo: "https://analog-clock-gamma-roan.vercel.app/",
 		},
 
 		details: {
