@@ -50,7 +50,9 @@ const Contact = ({ isDark }) => {
 						<button
 							onClick={copyEmail}
 							title="Copy Email"
-							className="flex items-center gap-2 text-[12px] sm:text-sm bg-white/10 px-3 py-2 rounded-lg hover:text-white transition-all w-full justify-center relative outline-none cursor-pointer">
+							className={`${
+								isDark ? "bg-white/10" : "bg-black/50"
+							} flex items-center gap-2 text-[12px] sm:text-sm px-3 py-2 rounded-lg hover:text-white transition-all w-full justify-center relative outline-none cursor-pointer`}>
 							<span className="truncate">pixedit.2023@gmail.com</span>
 
 							{copied ? <FiCheck className="text-green-400" /> : <FiCopy />}
