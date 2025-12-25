@@ -14,7 +14,7 @@ The portfolio highlights my front-end work, learning approach, and the way I thi
 
 Click on the link to navigate to live demo deployed on Vercel
 
-[View Live Demo](https://portfolio-48rm9my7j-pixedit-1760s-projects.vercel.app/)
+[View Live Demo](https://portfolio-liart-one-qcsef8dwww.vercel.app/)
 
 ## Tech Stack
 
