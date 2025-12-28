@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaExclamation, FaLongArrowAltRight } from "react-icons/fa";
-import { FaGear } from "react-icons/fa6";
+import { FaGear, FaArrowDownLong } from "react-icons/fa6";
 import Reveal from "./Reveal";
 import Button from "./Button";
 import ProfileImage from "./ProfileImage";
@@ -122,6 +122,20 @@ const Hero = ({ isDark }) => {
 					</Button>
 				</Reveal>
 			</div>
+			<Reveal delay="1">
+				<a
+					href="#about"
+					aria-label="Scroll to About section"
+					className={`absolute right-[10%] bottom-[5%] sm:bottom-[10%] group flex flex-col items-center gap-2 transition-all duration-300
+    ${isDark ? "text-white" : "text-slate-900"}`}>
+					<span
+						className="flex items-center justify-center p-2 rounded-full border border-current
+    motion-safe:animate-bounce transition-all duration-200 group-hover:bg-black/30 group-hover:border-gray-400
+    group-hover:text-white group-hover:scale-105">
+						<FaArrowDownLong />
+					</span>
+				</a>
+			</Reveal>
 		</div>
 	);
 };
